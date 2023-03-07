@@ -32,9 +32,15 @@ The following **additional** features are implemented:
 
 Here's a walkthrough of implemented user stories:
 
+
+https://user-images.githubusercontent.com/89226977/223571091-8dfee645-ed0f-4082-9cb3-717e3dfad784.mp4
+
+
+
+
 ## Notes
 
-Describe any challenges encountered while building the app.
+Autolayout is a beast
 
 ## License
 
