@@ -12,10 +12,10 @@ Time spent: **5** hours spent in total
 
 The following **required** functionality is completed:
 
-- [ ] Users are able to see a customized app icon and launch screen
+- [X] Users are able to see a customized app icon and launch screen
 - [X] Your app should work for any screen size and orientation using AutoLayout constraints
-  - [ ] Mark here if you will demostrate auto layout implemention as horizontal rotation or different phone size or both, then erase this text
-- [ ] Displays at least 5 different movies in a table view
+  - [X] Mark here if you will demostrate auto layout implemention as horizontal rotation or different phone size or both, then erase this text
+- [X] Displays at least 5 different movies in a table view
 - [X] Can tap into detail view of movie with a full description, backdrop image, and title
  
 The following **optional** features are implemented:
@@ -31,13 +31,6 @@ The following **additional** features are implemented:
 ## Video Walkthrough
 
 Here's a walkthrough of implemented user stories:
-
-
-
-<!-- Recommended tools:
-[Kap](https://getkap.co/) for macOS
-[ScreenToGif](https://www.screentogif.com/) for Windows
-[peek](https://github.com/phw/peek) for Linux. -->
 
 ## Notes
 
