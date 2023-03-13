@@ -47,7 +47,6 @@ class MovieViewController: UIViewController, UITableViewDataSource {
 
                 // Access the array of tracks from the `results` property
                 let movies = response.results
-                print(movies)
                 // Execute UI updates on the main thread when calling from a background callback
                 DispatchQueue.main.async {
 
