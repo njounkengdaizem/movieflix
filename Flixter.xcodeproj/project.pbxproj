@@ -9,21 +9,28 @@
 /* Begin PBXBuildFile section */
 		B7634E5729B65CD200663079 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7634E5629B65CD200663079 /* AppDelegate.swift */; };
 		B7634E5929B65CD200663079 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7634E5829B65CD200663079 /* SceneDelegate.swift */; };
-		B7634E5B29B65CD200663079 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7634E5A29B65CD200663079 /* ViewController.swift */; };
-		B7634E5E29B65CD200663079 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7634E5C29B65CD200663079 /* Main.storyboard */; };
+		B7634E5B29B65CD200663079 /* MovieViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7634E5A29B65CD200663079 /* MovieViewController.swift */; };
 		B7634E6029B65CD300663079 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B7634E5F29B65CD300663079 /* Assets.xcassets */; };
 		B7634E6329B65CD300663079 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7634E6129B65CD300663079 /* LaunchScreen.storyboard */; };
+		B7634E6B29B66AFA00663079 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7634E6A29B66AFA00663079 /* Movie.swift */; };
+		B7634E6E29B6771E00663079 /* MovieCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7634E6D29B6771E00663079 /* MovieCell.swift */; };
+		B798F99329B67A8E00542CF4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B798F99529B67A8E00542CF4 /* Main.storyboard */; };
+		B7B8F52B29B67F290000AA09 /* Nuke in Frameworks */ = {isa = PBXBuildFile; productRef = B7B8F52A29B67F290000AA09 /* Nuke */; };
+		B7B8F52F29B68D7E0000AA09 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7B8F52E29B68D7E0000AA09 /* DetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		B7634E5329B65CD200663079 /* Flixter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Flixter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7634E5629B65CD200663079 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B7634E5829B65CD200663079 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		B7634E5A29B65CD200663079 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		B7634E5D29B65CD200663079 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B7634E5A29B65CD200663079 /* MovieViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieViewController.swift; sourceTree = "<group>"; };
 		B7634E5F29B65CD300663079 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B7634E6229B65CD300663079 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B7634E6429B65CD300663079 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B7634E6A29B66AFA00663079 /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
+		B7634E6D29B6771E00663079 /* MovieCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCell.swift; sourceTree = "<group>"; };
+		B798F99429B67A8E00542CF4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B7B8F52E29B68D7E0000AA09 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +38,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B7B8F52B29B67F290000AA09 /* Nuke in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,7 +48,8 @@
 		B7634E4A29B65CD200663079 = {
 			isa = PBXGroup;
 			children = (
-				B7634E5529B65CD200663079 /* Flixter */,
+				B7634E6C29B66BD700663079 /* Models */,
+				B7634E5529B65CD200663079 /* Movieflix */,
 				B7634E5429B65CD200663079 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -53,18 +62,28 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		B7634E5529B65CD200663079 /* Flixter */ = {
+		B7634E5529B65CD200663079 /* Movieflix */ = {
 			isa = PBXGroup;
 			children = (
 				B7634E5629B65CD200663079 /* AppDelegate.swift */,
 				B7634E5829B65CD200663079 /* SceneDelegate.swift */,
-				B7634E5A29B65CD200663079 /* ViewController.swift */,
-				B7634E5C29B65CD200663079 /* Main.storyboard */,
+				B7B8F52E29B68D7E0000AA09 /* DetailViewController.swift */,
+				B7634E5A29B65CD200663079 /* MovieViewController.swift */,
+				B7634E6D29B6771E00663079 /* MovieCell.swift */,
 				B7634E5F29B65CD300663079 /* Assets.xcassets */,
+				B798F99529B67A8E00542CF4 /* Main.storyboard */,
 				B7634E6129B65CD300663079 /* LaunchScreen.storyboard */,
 				B7634E6429B65CD300663079 /* Info.plist */,
 			);
-			path = Flixter;
+			path = Movieflix;
+			sourceTree = "<group>";
+		};
+		B7634E6C29B66BD700663079 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B7634E6A29B66AFA00663079 /* Movie.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +102,9 @@
 			dependencies = (
 			);
 			name = Flixter;
+			packageProductDependencies = (
+				B7B8F52A29B67F290000AA09 /* Nuke */,
+			);
 			productName = Flixter;
 			productReference = B7634E5329B65CD200663079 /* Flixter.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +133,9 @@
 				Base,
 			);
 			mainGroup = B7634E4A29B65CD200663079;
+			packageReferences = (
+				B7B8F52929B67F290000AA09 /* XCRemoteSwiftPackageReference "Nuke" */,
+			);
 			productRefGroup = B7634E5429B65CD200663079 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -125,9 +150,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B798F99329B67A8E00542CF4 /* Main.storyboard in Resources */,
 				B7634E6329B65CD300663079 /* LaunchScreen.storyboard in Resources */,
 				B7634E6029B65CD300663079 /* Assets.xcassets in Resources */,
-				B7634E5E29B65CD200663079 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,8 +163,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B7634E5B29B65CD200663079 /* ViewController.swift in Sources */,
+				B7634E6E29B6771E00663079 /* MovieCell.swift in Sources */,
+				B7634E5B29B65CD200663079 /* MovieViewController.swift in Sources */,
 				B7634E5729B65CD200663079 /* AppDelegate.swift in Sources */,
+				B7B8F52F29B68D7E0000AA09 /* DetailViewController.swift in Sources */,
+				B7634E6B29B66AFA00663079 /* Movie.swift in Sources */,
 				B7634E5929B65CD200663079 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -147,14 +175,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		B7634E5C29B65CD200663079 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				B7634E5D29B65CD200663079 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		B7634E6129B65CD300663079 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -162,6 +182,15 @@
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
+		};
+		B798F99529B67A8E00542CF4 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B798F99429B67A8E00542CF4 /* Base */,
+			);
+			name = Main.storyboard;
+			path = /Users/daizenj/Desktop/codepath_ios/movieflix/Flixter/../../../../.Trash;
+			sourceTree = "<absolute>";
 		};
 /* End PBXVariantGroup section */
 
@@ -289,13 +318,14 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = FW5BACSZ6A;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Flixter/Info.plist;
+				INFOPLIST_FILE = Movieflix/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Movieflix;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -318,13 +348,14 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = FW5BACSZ6A;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Flixter/Info.plist;
+				INFOPLIST_FILE = Movieflix/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Movieflix;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -360,6 +391,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		B7B8F52929B67F290000AA09 /* XCRemoteSwiftPackageReference "Nuke" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/kean/Nuke.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		B7B8F52A29B67F290000AA09 /* Nuke */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B7B8F52929B67F290000AA09 /* XCRemoteSwiftPackageReference "Nuke" */;
+			productName = Nuke;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = B7634E4B29B65CD200663079 /* Project object */;
 }

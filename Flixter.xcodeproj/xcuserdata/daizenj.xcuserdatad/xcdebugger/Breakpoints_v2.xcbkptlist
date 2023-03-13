@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "FC73FFD6-7E73-46E6-8636-E5F2CD2577D6"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "942967B1-3A47-4828-A51E-4E46C7E74471"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Flixter/MusicCell.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "14"
+            endingLineNumber = "14"
+            landmarkName = "MusicCell"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "942967B1-3A47-4828-A51E-4E46C7E74471 - db636a594f51c355"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Flixter.MusicCell.movieImageView.getter : Swift.Optional&lt;__C.UIImageView&gt;"
+                  moduleName = "Flixter"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/daizenj/Desktop/codepath_ios/movieflix/Flixter/MusicCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "88">
+               </Location>
+               <Location
+                  uuid = "942967B1-3A47-4828-A51E-4E46C7E74471 - 2bd5dc6749ffff69"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Flixter.MusicCell.movieImageView.setter : Swift.Optional&lt;__C.UIImageView&gt;"
+                  moduleName = "Flixter"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/daizenj/Desktop/codepath_ios/movieflix/Flixter/MusicCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "108">
+               </Location>
+               <Location
+                  uuid = "942967B1-3A47-4828-A51E-4E46C7E74471 - ef19ca845f53a856"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Flixter.MusicCell.movieImageView.modify : Swift.Optional&lt;__C.UIImageView&gt;"
+                  moduleName = "Flixter"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/daizenj/Desktop/codepath_ios/movieflix/Flixter/MusicCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "0">
+               </Location>
+               <Location
+                  uuid = "942967B1-3A47-4828-A51E-4E46C7E74471 - b7ce946c1f09d978"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Flixter.MusicCell.movieImageView.modify : Swift.Optional&lt;__C.UIImageView&gt; with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "Flixter"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/daizenj/Desktop/codepath_ios/movieflix/Flixter/MusicCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "28">
+               </Location>
+               <Location
+                  uuid = "942967B1-3A47-4828-A51E-4E46C7E74471 - 4802767551e3603e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Flixter.MusicCell.init(style: __C.UITableViewCellStyle, reuseIdentifier: Swift.Optional&lt;Swift.String&gt;) -&gt; Flixter.MusicCell"
+                  moduleName = "Flixter"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/daizenj/Desktop/codepath_ios/movieflix/Flixter/MusicCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "132">
+               </Location>
+               <Location
+                  uuid = "942967B1-3A47-4828-A51E-4E46C7E74471 - f0ba2c7f8481e528"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Flixter.MusicCell.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;Flixter.MusicCell&gt;"
+                  moduleName = "Flixter"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/daizenj/Desktop/codepath_ios/movieflix/Flixter/MusicCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "108">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
