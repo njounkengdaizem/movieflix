@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Movie {
+struct Movie: Decodable {
     let title: String
     let overview: String
     let poster_path: URL
@@ -17,6 +17,10 @@ struct Movie {
     let popularity: Float
 }
 
+struct MoviesResponse: Decodable{
+    let results: [Movie]
+    
+}
 extension Movie {
 
     /// An array of mock tracks

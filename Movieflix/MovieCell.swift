@@ -30,9 +30,8 @@ class MovieCell: UITableViewCell {
         movieNameLabel.text = movie.title
         movieDescriptionLabel.text = movie.overview
         movieDescriptionLabel.font = UIFont.systemFont(ofSize: 12)
-
         // Load image async via Nuke library image loading helper method
-        Nuke.loadImage(with: movie.poster_path, into: movieImageView)
+        Nuke.loadImage(with: URL(string: "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/" + movie.poster_path.absoluteString)!, into: movieImageView)
     }
 
     
