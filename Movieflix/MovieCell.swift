@@ -17,6 +17,7 @@ class MovieCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+//        movieNameLabel.font = UIFont(name: "futura", size:20.0)
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
@@ -26,10 +27,10 @@ class MovieCell: UITableViewCell {
     }
     
     func configure(with movie: Movie) {
-        movieNameLabel.font = UIFont(name:"Avenir-Bold", size: 20.0)
+        movieNameLabel.font = UIFont(name:"PalatinoBold", size: 20.0)
         movieNameLabel.text = movie.title
         movieDescriptionLabel.text = movie.overview
-        movieDescriptionLabel.font = UIFont.systemFont(ofSize: 12)
+        movieDescriptionLabel.font = UIFont.systemFont(ofSize: 15)
         // Load image async via Nuke library image loading helper method
         Nuke.loadImage(with: URL(string: "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/" + movie.poster_path.absoluteString)!, into: movieImageView)
     }

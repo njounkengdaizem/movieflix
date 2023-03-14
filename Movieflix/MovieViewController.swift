@@ -21,9 +21,7 @@ class MovieViewController: UIViewController, UITableViewDataSource {
         // Use the URL to instantiate a request
         let request = URLRequest(url: url)
 
-        // Create a URLSession using a shared instance and call its dataTask method
-        // The data task method attempts to retrieve the contents of a URL based on the specified URL.
-        // When finished, it calls it's completion handler (closure) passing in optional values for data (the data we want to fetch), response (info about the response like status code) and error (if the request was unsuccessful)
+
         let task = URLSession.shared.dataTask(with: request) { [weak self] data, response, error in
 
             // Handle any errors

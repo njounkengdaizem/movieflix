@@ -23,7 +23,6 @@ class DetailViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
         Nuke.loadImage(with: URL(string: "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/" + movie.backdrop_path.absoluteString)!, into: movieImageView)
         movieTitle.text = movie.title
         movieDescription.text = movie.overview

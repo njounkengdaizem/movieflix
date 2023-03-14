@@ -6,14 +6,15 @@
 //
 
 import UIKit
+import Nuke
 
-class PosterViewController: UIViewController {
+class PosterViewController: UIViewController, UICollectionViewDataSource {
     var posters: [Poster] = []
-
+    @IBOutlet weak var collectionView: UICollectionView!
     override func viewDidLoad() {
+        collectionView.dataSource = self        
         super.viewDidLoad()
-        // Create a search URL for fetching albums (`entity=album`)
-        let url = URL(string: "https://api.themoviedb.org/3/movie/now_playing?api_key=d6724a440c50512f8461d146e998c1c7")!
+        let url = URL(string: "https://api.themoviedb.org/3/movie/popular?api_key=d6724a440c50512f8461d146e998c1c7")!
         let request = URLRequest(url: url)
 
         let task = URLSession.shared.dataTask(with: request) { [weak self] data, response, error in
@@ -36,7 +37,10 @@ class PosterViewController: UIViewController {
                     // Try to parse the response into our custom model
                     let response = try decoder.decode(PosterResponse.self, from: data)
                     let posters = response.results
-                    self?.posters = posters
+                    DispatchQueue.main.async {
+                        self?.posters = posters
+                        self?.collectionView.reloadData()
+                    }
                 }
             }catch {
                     print(error.localizedDescription)
@@ -49,15 +53,24 @@ class PosterViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        posters.count
     }
-    */
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "PosterCell", for: indexPath) as! PosterCell
 
+            // Use the indexPath.item to index into the albums array to get the corresponding album
+            let poster = posters[indexPath.item]
+
+            // Get the artwork image url
+        let imageUrl = poster.poster_path
+
+            // Set the image on the image view of the cell
+        Nuke.loadImage(with: URL(string: "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/" + imageUrl.absoluteString)!, into: cell.posterImageView)
+
+            return cell
+    }
+    
 }

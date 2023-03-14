@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B72BC3F229C0050600D1CB9A /* MovieTabBarControllerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B72BC3F129C0050600D1CB9A /* MovieTabBarControllerViewController.swift */; };
 		B7634E5729B65CD200663079 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7634E5629B65CD200663079 /* AppDelegate.swift */; };
 		B7634E5929B65CD200663079 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7634E5829B65CD200663079 /* SceneDelegate.swift */; };
 		B7634E5B29B65CD200663079 /* MovieViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7634E5A29B65CD200663079 /* MovieViewController.swift */; };
@@ -23,6 +24,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B72BC3F129C0050600D1CB9A /* MovieTabBarControllerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieTabBarControllerViewController.swift; sourceTree = "<group>"; };
 		B7634E5329B65CD200663079 /* Flixter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Flixter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7634E5629B65CD200663079 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B7634E5829B65CD200663079 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -76,6 +78,7 @@
 				B7B8F52E29B68D7E0000AA09 /* DetailViewController.swift */,
 				B7634E5A29B65CD200663079 /* MovieViewController.swift */,
 				B77DED4029BF7B8700A5D8E9 /* PosterViewController.swift */,
+				B72BC3F129C0050600D1CB9A /* MovieTabBarControllerViewController.swift */,
 				B77DED4629BF830B00A5D8E9 /* PosterCell.swift */,
 				B7634E6D29B6771E00663079 /* MovieCell.swift */,
 				B7634E5F29B65CD300663079 /* Assets.xcassets */,
@@ -175,6 +178,7 @@
 				B77DED4129BF7B8700A5D8E9 /* PosterViewController.swift in Sources */,
 				B7634E6E29B6771E00663079 /* MovieCell.swift in Sources */,
 				B77DED4729BF830B00A5D8E9 /* PosterCell.swift in Sources */,
+				B72BC3F229C0050600D1CB9A /* MovieTabBarControllerViewController.swift in Sources */,
 				B7634E5B29B65CD200663079 /* MovieViewController.swift in Sources */,
 				B7634E5729B65CD200663079 /* AppDelegate.swift in Sources */,
 				B77DED4329BF7DB400A5D8E9 /* Poster.swift in Sources */,

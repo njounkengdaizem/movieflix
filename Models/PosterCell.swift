@@ -7,9 +7,9 @@
 
 import UIKit
 
-class PosterCell: UICollectionViewCell {
+class PosterCell: UICollectionViewCell{
     
-    @IBOutlet weak var posterImageView: UIView!
+    @IBOutlet weak var posterImageView: UIImageView!
     
-    
+
 }
