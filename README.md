@@ -1,10 +1,8 @@
-# movieflix
-
-# Project 2 - *Movieflix*
+# Project 3 - *Movieflix*
 
 Submitted by: **Daize Njounkeng**
 
-**Movieflix** is a movie browsing app that displays current movies streaming in theatre 
+**Movieflix** is a movie browsing application synced with live data from https://www.themoviedb.org/
 
 Time spent: **5** hours spent in total
 
@@ -12,35 +10,38 @@ Time spent: **5** hours spent in total
 
 The following **required** functionality is completed:
 
-- [X] Users are able to see a customized app icon and launch screen
-- [X] Your app should work for any screen size and orientation using AutoLayout constraints
-  - [X] Mark here if you will demostrate auto layout implemention as horizontal rotation or different phone size or both, then erase this text
-- [X] Displays at least 5 different movies in a table view
-- [X] Can tap into detail view of movie with a full description, backdrop image, and title
+- [X] Implement network call and table view to display a list of movies currently playing (title, description, image)
+- [X] App has a collection view with the same list of movies
+- [X] Uses a tab bar controller to switch between collection view and table view screens
  
 The following **optional** features are implemented:
 
-- [ ] Unique UI changes, such as background, font/color changes, etc.
-- [ ] User implements a collection view
-- [ ] User implemenets tab bar controller with at least two screens
+- [X] Make an additional network call to another end-point.	
+One makes a call to now_showing and the other popular endpoint
+- [X] Allow users to scroll when context items are off-screen (table view implemention)
 
 The following **additional** features are implemented:
 
 - [ ] List anything else that you can get done to improve the app functionality!
+
+- Add similar movies options
 
 ## Video Walkthrough
 
 Here's a walkthrough of implemented user stories:
 
 
-https://user-images.githubusercontent.com/89226977/223571091-8dfee645-ed0f-4082-9cb3-717e3dfad784.mp4
+https://user-images.githubusercontent.com/89226977/224885326-11d68edd-cf20-4bf7-ac4a-f77fa04b8827.mp4
 
 
 
+<!-- Replace this with whatever GIF tool you used! -->
+GIF created with ...  
+<!-- Recommended tools:
+[Kap](https://getkap.co/) for macOS
+[ScreenToGif](https://www.screentogif.com/) for Windows
+[peek](https://github.com/phw/peek) for Linux. -->
 
-## Notes
-
-Autolayout is a beast
 
 ## License
 
