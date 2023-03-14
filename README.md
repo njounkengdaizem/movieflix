@@ -34,15 +34,6 @@ Here's a walkthrough of implemented user stories:
 https://user-images.githubusercontent.com/89226977/224885326-11d68edd-cf20-4bf7-ac4a-f77fa04b8827.mp4
 
 
-
-<!-- Replace this with whatever GIF tool you used! -->
-GIF created with ...  
-<!-- Recommended tools:
-[Kap](https://getkap.co/) for macOS
-[ScreenToGif](https://www.screentogif.com/) for Windows
-[peek](https://github.com/phw/peek) for Linux. -->
-
-
 ## License
 
     Copyright [yyyy] [name of copyright owner]
